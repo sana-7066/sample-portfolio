@@ -8,6 +8,7 @@ const path = require('path');
 const public = path.join(__dirname,'../public');
 
 app.use(express.urlencoded({extended : false}));
+app.use(express.json());
 app.use(express.static(public));
 
 app.set('view engine','hbs');
