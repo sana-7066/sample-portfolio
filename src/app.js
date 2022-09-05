@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 require('./db/connect');
 const user = require('./modals/user');
-const port = process.env.port || 5000;
+const port = process.env.PORT || 5000;
 const path = require('path');
 const public = path.join(__dirname,'../public');
 
@@ -32,5 +32,5 @@ app.post('/',async(req,res)=>
 
 })
 app.listen(port,() =>{
-    console.log('server is started')
+    console.log('server is started at '+port)
 });

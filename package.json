@@ -1,5 +1,5 @@
 {
-  "name": "project1july",
+  "name": "myportfolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "start" : "node src/app.js -e hbs,js,html"
   },
   "keywords": [],
-  "author": "",
+  "author": "Sana Shaikh",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.1",
