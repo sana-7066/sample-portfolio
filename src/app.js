@@ -7,7 +7,7 @@ const port = process.env.PORT || 5000;
 const path = require('path');
 const public = path.join(__dirname,'../public');
 
-app.use(express.urlencoded({extended : false}));
+app.use(express.urlencoded({extended : false}));//if extended : false you cant post nested object
 app.use(express.json());
 app.use(express.static(public));
 
